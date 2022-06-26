@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Overview</title>
+    <link rel="icon" type="image/gif/png" href="./logos/favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="signup.css">
+    
+
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg bg-light">
+    <div class="container">
+      <img style="width: 50px;" id="logo" src="images/logo.jpeg" class="d-inline-block align-text-center mx-5" alt="blank">
+            <span class="fs-5 text-muted">INREM</span>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto mb-2 mb-lg-0  ">
+                <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="home.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="about.html">About</a>
+                </li>
+                <li class="nav-item dropdown active">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        Courses
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="overview.html">Overview</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="schedule.html">Curriculm</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        Get started
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="home.html#saathi">Saathi</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="home.html#Mentor">Mentor</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="home.html#Trainee">Trainer</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="help.html">Help</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#loginModal" data-bs-toggle="modal" data-target="#loginModal">Login</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#SignupModal" data-bs-toggle="modal" data-target="#SignupModal">Sign up</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Login modal -->
+
+<div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Login</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+          <div class="bg-container">
+              <div class="login-pg">
+                  <h1 class="heading">Login to INREM</h1>
+                  <div class="signup-btns">
+                      <button class="btn btn-g"><i class="fa-brands fa-google icon"></i>Login with Google</button>
+                      <button class="btn btn-g"><i class="fa-brands fa-facebook icon icon-f"></i>Login with facebook</button>
+                  </div>
+                  <div class="email-sec">
+                      <p class="or">----------------or----------------</p>
+                      <input type="text" placeholder="Email address" class="email-input" />
+                      <input type="password" placeholder="Password" class="email-input" />
+                      <div class="additional">
+                          <div class="checkbox-cont">
+                              <input type="checkbox" id="checkBox" class="checkbox" />
+                              <label for="checkBox" class="c-font">Remember me</label>
+                          </div>
+                          <a href="#" class="forget-p">Forgot password?</a>
+                      </div>
+                      <h6 class="d-account">Don't have an account?&emsp;<a href="file:///D:/JPMC/team-68/signup.html">Sign Up</a></h6>
+                      <button class="btn login">Login</button>
+                  </div>
+              </div>
+          </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<!-- SignUp modal -->
+
+<div class="modal fade" id="SignupModal" tabindex="-1" role="dialog" aria-labelledby="SignupModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Register With Us</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+          <div class="bg-container">
+              <div class="login-pg">
+                  <h1 class="heading">Sign up on INREM</h1>
+                  <div class="signup-btns">
+                      <button class="btn btn-g"><i class="fa-brands fa-google icon"></i>Sign up with Google</button>
+                      <button class="btn btn-g"><i class="fa-brands fa-facebook icon icon-f"></i>Sign up with facebook</button>
+                  </div>
+                  <div class="email-sec">
+                      <p class="or">---------------- OR ----------------</p>
+                      <div class="user-name">
+                          <input type="text" placeholder="First Name" class="name-input" />
+                          <input type="text" placeholder="Last Name" class="name-input" />
+                      </div>
+                      <input type="text" placeholder="Email address" class="email-input" />
+                      <input type="password" placeholder="Password" class="email-input" />
+                      <input type="text" placeholder="Phone Number" class="email-input" />
+                      <div class="additional">
+                          <div class="checkbox-cont">
+                              <input type="checkbox" id="checkBox" class="checkbox" />
+                              <label for="checkBox" class="c-font">Remember me</label>
+                          </div>
+                          <a href="#" class="forget-p">Forgot password?</a>
+                      </div>
+                      <h6 class="d-account">Have an account?&emsp;<a href="file:///D:/JPMC/team-68/login.html">Login</a></h6>
+                      <button class="btn login">Sign In</button>
+                  </div>
+              </div>
+          </div>
+    </div>
+  </div>
+</div>
+</div>
+
+
+   <h2 class="fs-1" style =" text-align: center; margin-top: 2.5rem; color: #0077B6;">Course Overview</h2>
+   
+        <div class="card mb-3 img-fluid" style="max-width: fit-content; margin: 6em; border:0; margin-left: 12em;">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img src="images/water.jpg" class="img-fluid rounded-start" style="padding-right: 2em; max-height: fit-content; " alt="...">
+              </div>
+              <div class="col-md-8" style="max-width: 40em;">
+                <div class="card-body">
+                  <h5 class="card-title fs-3" style="padding-bottom:1.5em;">Why this course?</h5>
+                  <p class="card-text" style="text-align:justify">Jal Jeevan Mission (JJM) aims to reach Safe water to every household in India. One of the big challenges
+                    in doing in this to supply Safe quality water. Problems such as pathogens, fluoride, arsenic, iron, nitrate,
+                    salinity and many emerging contaminants make this problem difficult. Water Quality Management (WQM)
+                    aims to make this mission possible by helping safe drinking water available to all. It involves participation
+                    of all stakeholders including the community in realizing this goal. By taking WQM to every village of India,
+                    we dream of having high quality water and better health for all citizens of the country.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+   
+
+  <div class="card mb-3 img-fluid" style="max-width: fit-content; margin: 6em; border:0; margin-left: 12em;">
+    <div class="row g-0">
+      <div class="col-md-8" style="max-width: 40em;">
+        <div class="card-body">
+          <h5 class="card-title fs-3" style="padding-bottom:1.5em;">Who is it for?</h5>
+          <p class="card-text" style="text-align:justify">The JJM is being implemented with the thinking of "coming together" and collaboratively solving our
+            collective Water problems. The State and District Water Sanitation Missions (SWSM/DWSM) are being
+            supported by Sector Partners, Key Resource Centres (KRC), and Implementation Support Agencies (ISA)
+            so that every Village Water and Sanitation Committee (VWSC) gets equipped to think and manage its
+            own water supply. This WQM course here is aimed at Sector Partners, KRCs and DWSM support cells
+            along with ISAs. We believe that the foundation provided by the WQM course will help in bringing focus to
+            Water quality issues and finally equip community based institutions respond to the problems in a much
+            more informed manner. </p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <img src="images/course.jpg" class="img-fluid rounded-start" style="padding-left: 2em; max-height: fit-content;" alt="...">
+      </div>
+    </div>
+  </div>
+
+  <div class="card mb-3 img-fluid" style="max-width: fit-content; margin: 6em; border:0; margin-left: 12em;">
+    <div class="row g-0">
+      <div class="col-md-4">
+        <img src="images/teach.jpg" class="img-fluid rounded-start" style="padding-right: 2em; max-height: fit-content;" alt="...">
+      </div>
+      <div class="col-md-8" style="max-width: 40em;">
+        <div class="card-body">
+          <h5 class="card-title fs-3" style="padding-bottom:1.5em;">What after the course?</h5>
+          <p class="card-text" style="text-align:justify">Within this WQM course itself, we provide tools and techniques of being able to demystify WQM and take
+            it to local community's situation in a simplified and contextual manner. One such approach is that of the
+            "Safe water learning cards" that helps to simply and contextualize Water quality issues, to frontline
+            workers associated with VWSCs. The Safe water learning cards are a well tested system that help easy
+            and rapid learning leading to specific action on ground. These cards are digitally connected to enable
+            references and actionable content being available. The WQM course will enable the participants to use
+            these cards and conduct on ground sessions for frontline workers. Beyond this, a community based
+            Behaviour change communication (BCC) campaign based on Water Safety Planning concept has been
+            developed and will help take WQM to communities across villages of India.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+        <br>
+        <br>
+        <br>
+
+  <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+    <div class="col-md-4 d-flex align-items-center">
+      <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+      </a>
+      <span class="mb-3 mb-md-0 text-muted">Copyright© 2011, INREM. All rights reserved.</span>
+    </div>
+
+    <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+      <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"></use></svg></a></li>
+      <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"></use></svg></a></li>
+      <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"></use></svg></a></li>
+    </ul>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
+        integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+        integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+        crossorigin="anonymous"></script>
+
+</body>
+</html>

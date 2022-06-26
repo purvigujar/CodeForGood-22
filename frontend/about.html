@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="icon" type="image/gif/png" href="./logos/favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="signup.css">
+    <link rel="import" href="home.html">
+    
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container">
+            <img style="width: 50px;" id="logo" src="images/logo.jpeg" class="d-inline-block align-text-center mx-5" alt="blank">
+            <span class="fs-5 text-muted">INREM</span>          
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto mb-2 mb-lg-0  ">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="home.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Courses
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="overview.html">Overview</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="schedule.html">Curriculm</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Get started
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="home.html#saathi">Saathi</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="home.html#Mentor">Mentor</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="home.html#Trainee">Trainer</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="help.html">Help</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#loginModal" data-bs-toggle="modal" data-target="#loginModal">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#SignupModal" data-bs-toggle="modal" data-target="#SignupModal">Sign up</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Login modal -->
+
+    <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Login</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+                <div class="bg-container">
+                    <div class="login-pg">
+                        <h1 class="heading">Login to INREM</h1>
+                        <div class="signup-btns">
+                            <button class="btn btn-g"><i class="fa-brands fa-google icon"></i>Login with Google</button>
+                            <button class="btn btn-g"><i class="fa-brands fa-facebook icon icon-f"></i>Login with facebook</button>
+                        </div>
+                        <div class="email-sec">
+                            <p class="or">----------------or----------------</p>
+                            <input type="text" placeholder="Email address" class="email-input" />
+                            <input type="password" placeholder="Password" class="email-input" />
+                            <div class="additional">
+                                <div class="checkbox-cont">
+                                    <input type="checkbox" id="checkBox" class="checkbox" />
+                                    <label for="checkBox" class="c-font">Remember me</label>
+                                </div>
+                                <a href="#" class="forget-p">Forgot password?</a>
+                            </div>
+                            <h6 class="d-account">Don't have an account?&emsp;<a href="file:///D:/JPMC/team-68/signup.html">Sign Up</a></h6>
+                            <button class="btn login">Login</button>
+                        </div>
+                    </div>
+                </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SignUp modal -->
+
+    <div class="modal fade" id="SignupModal" tabindex="-1" role="dialog" aria-labelledby="SignupModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Register With Us</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+                <div class="bg-container">
+                    <div class="login-pg">
+                        <h1 class="heading">Sign up on INREM</h1>
+                        <div class="signup-btns">
+                            <button class="btn btn-g"><i class="fa-brands fa-google icon"></i>Sign up with Google</button>
+                            <button class="btn btn-g"><i class="fa-brands fa-facebook icon icon-f"></i>Sign up with facebook</button>
+                        </div>
+                        <div class="email-sec">
+                            <p class="or">---------------- OR ----------------</p>
+                            <div class="user-name">
+                                <input type="text" placeholder="First Name" class="name-input" />
+                                <input type="text" placeholder="Last Name" class="name-input" />
+                            </div>
+                            <input type="text" placeholder="Email address" class="email-input" />
+                            <input type="password" placeholder="Password" class="email-input" />
+                            <input type="text" placeholder="Phone Number" class="email-input" />
+                            <div class="additional">
+                                <div class="checkbox-cont">
+                                    <input type="checkbox" id="checkBox" class="checkbox" />
+                                    <label for="checkBox" class="c-font">Remember me</label>
+                                </div>
+                                <a href="#" class="forget-p">Forgot password?</a>
+                            </div>
+                            <h6 class="d-account">Have an account?&emsp;<a href="file:///D:/JPMC/team-68/login.html">Login</a></h6>
+                            <button class="btn login">Sign In</button>
+                        </div>
+                    </div>
+                </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div>
+        <p class="h1 text-center text-primary my-4"> About Us</p>
+
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="images/poor3.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="images/poor4.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="images/poor1.jpg" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+</div>
+
+<hr class="text-primary border-2 opacity-50 my-5 mx-5">
+
+<div>
+    <h2 class="h2 text-center text-primary my-4">
+        INREM IN INDIA
+    </h2>
+    <p class="text-primary text-muted text-center ">
+        INREM works across India in 7 states directly and with partners in most placs reacheong out on environ mental problems such as water pollution affecting millions of people in India.<br>We have the main coordination team based in Anand(Gujarat) and locational teams in other places
+    </p>
+</div>
+
+<div class="album py-5 bg-light">
+    <div class="container">
+
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+        <div class="col">
+            <div class="card shadow-sm border-primary" style="border-radius: 2rem;">
+                <img src="https://uploads.knightlab.com/storymapjs/adca2392f7ab793776f5588c21433993/inrem-in-india/_images/IMG-20190422-WA0041%20(1).jpg" style="border-top-left-radius: 2rem;border-top-right-radius: 2rem; width: 419px; height: 219px;" alt="">
+
+            <div class="card-body ">
+                <h4 class="h4"> THE ANAND TEAM</h4>
+              <p class="card-text">INREM's Anand team plays a strategic role for the organization and for wider stakeholders engaging on key issues such as Water quality and health. It is a 10 person team composed of a mix of planners, communication specialists and technical experts in the areas that INREM works.</p>
+              <div class="d-flex justify-content-between align-items-center">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+            <div class="card shadow-sm border-primary" style="border-radius: 2rem;">
+                <img src="https://uploads.knightlab.com/storymapjs/adca2392f7ab793776f5588c21433993/inrem-in-india/_images/_A6A0038.jpg" style="border-top-left-radius: 2rem;border-top-right-radius: 2rem; width: 419px; height: 219px;" alt="">
+
+            <div class="card-body ">
+                <h4 class="h4"> SAFE WATER FOR BALASORE</h4>
+              <p class="card-text">This coastal district of eastern Odisha has its own set of ecological concerns, among them being Water quality issues.<br> Our Balasore team works closely with multiple civil society and government partners on problems such as Fluorosis mitigation.</p>
+              <div class="d-flex justify-content-between align-items-center">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+            <div class="card shadow-sm border-primary" style="border-radius: 2rem;">
+                <img src="https://uploads.knightlab.com/storymapjs/adca2392f7ab793776f5588c21433993/inrem-in-india/_images/7bf10dd4-5160-4803-bd3c-27d69fe57839.jpeg" style="border-top-left-radius: 2rem;border-top-right-radius: 2rem;width: 419px; height: 219px;" alt="">
+
+            <div class="card-body ">
+                <h4 class="h4"> FINALLY, HOPE IN NALGONDA</h4>
+
+              <p class="card-text">Nalgonda, in Telangana, is <br>synonymous with "Fluorosis" an almost <br>hundred year old disease from contaminated<br> water. <br>Disability and crippling is all now being addressed with Safe water , nutrition and a convergence approach.</p>
+              <div class="d-flex justify-content-between align-items-center">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card shadow-sm border-primary" style="border-radius: 2rem;">
+            <img src="https://uploads.knightlab.com/storymapjs/adca2392f7ab793776f5588c21433993/inrem-in-india/_images/cpz5loxd5hy0tbrtriy8.jpg" style="border-top-left-radius: 2rem;border-top-right-radius: 2rem;width: 419px; height: 219px;" alt="">
+
+
+            <div class="card-body ">
+                <h4 class="h4">SUSTAINING WATER IN CHIKBALLAPUR</h4>
+              <p class="card-text">Extreme water scarcity signified by thousands of dry deep borewells and a high fluoride problem in groundwater combine together to create a difficult water management problem in this district of Karnataka, in southern India. Our team here brings in a variety of local and regional groups to work on solutions for the problems here.</p>
+              <div class="d-flex justify-content-between align-items-center">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+            <div class="card shadow-sm border-primary" style="border-radius: 2rem;">
+                <img src="https://uploads.knightlab.com/storymapjs/adca2392f7ab793776f5588c21433993/inrem-in-india/_images/c1e7c899-1cb2-41ae-9065-9fad65ee1679.jpeg" style="border-top-left-radius: 2rem;border-top-right-radius: 2rem; width: 419px; height: 219px;" alt="">
+
+
+            <div class="card-body ">
+                <h4 class="h4">MAKING WATER SOLUTIONS WORK IN NALBARI</h4>
+              <p class="card-text">Assam gives an impression of the Brahmaputra river and  water in plenty. But little do we know that beneath this plentiness, lies a story of water contamination - Arsenic, fluoride and other toxins in water.<br> Our teams helps sustain local and ecological solutions, alongwith helping control further spread of the diseases here. </p>
+              <div class="d-flex justify-content-between align-items-center">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+            <div class="card shadow-sm border-primary" style="border-radius: 2rem;">
+                <img src="https://uploads.knightlab.com/storymapjs/adca2392f7ab793776f5588c21433993/inrem-in-india/_images/c4138f62-89f2-4988-92d0-9405a283e794.jpeg" style="border-top-left-radius: 2rem;border-top-right-radius: 2rem; width: 419px; height: 219px;" alt="">
+            <div class="card-body ">
+                <h4 class="h4">FLOODS AND WATER CONTAMINATION IN BUXAR</h4>
+              <p class="card-text">A double whammy of repeated floods and a cancer hotspot puts Buxar in Bihar, eastern India, into a cycle of poverty. <br>Arsenic in water is one reason behind this. Our team here works to detect Arsenicosis at early stages and helps sustain community based solutions to the Arsenic problem. </p>
+              <div class="d-flex justify-content-between align-items-center">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+            <div class="card shadow-sm border-primary" style="border-radius: 2rem;">
+                <img src="https://uploads.knightlab.com/storymapjs/adca2392f7ab793776f5588c21433993/inrem-in-india/_images/hupbdu1rsorismsqodza.jpg" style="border-top-left-radius: 2rem;border-top-right-radius: 2rem; width: 419px; height: 219px;" alt="">
+            <div class="card-body ">
+                <h4 class="h4">MAKING EVERY DROP OF RAIN COUNT IN DUNGARPUR</h4>
+              <p class="card-text">Dungarpur in southern Rajasthan, is an undulating area with tribal pockets and high water scarcity. High fluoride in water brings another layer of trouble for communities here. With a combination of strong community based action, and conserving Rainwater, our team here, has brought much hope to the people of this district</p>
+              <div class="d-flex justify-content-between align-items-center">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+            <div class="card shadow-sm border-primary" style="border-radius: 2rem;">
+                <img src="https://uploads.knightlab.com/storymapjs/adca2392f7ab793776f5588c21433993/inrem-in-india/_images/e084a11e-ea07-4863-b514-c68a21984f52.jpeg" style="border-top-left-radius: 2rem;border-top-right-radius: 2rem; width: 419px; height: 219px;" alt="">
+            <div class="card-body ">
+                <h4 class="h4">HEALING CHILDREN FROM DISABILITY</h4>
+              <p class="card-text">Our oldest field programme in Jhabua, Madhya Pradesh, pioneered the approach of Safe drinking water and good nutrition to tackle fluorosis. Healing children from a life of disability is a mission for our team here. <br>Neighbouring Ali Rajpur is also a district where fresher effort is being made. </p>
+              <div class="d-flex justify-content-between align-items-center">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+            <div class="card shadow-sm border-primary" style="border-radius: 2rem;">
+                <img src="https://uploads.knightlab.com/storymapjs/adca2392f7ab793776f5588c21433993/inrem-in-india/_images/f4b19eba-53df-4cc9-bf48-721e76210e44.jpeg" style="border-top-left-radius: 2rem;border-top-right-radius: 2rem; width: 419px; height: 219px;" alt="">
+            <div class="card-body ">
+                <h4 class="h4">BUILDING COMMUNITY RESILIENCE TO WATER IN BHAGALPUR</h4>
+              <p class="card-text">High Arsenic in water is making life difficult for thousands of people living in the Gangetic plains of Bhagalpur in Bihar. Floods make this problem worse. By early stage detection of the problem, and healing with Safe water, our team helps to bring relief to the Arsenicosis affected people of Bhagalpur. </p>
+              <div class="d-flex justify-content-between align-items-center">
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top ">
+    <div class="col-md-4 d-flex align-items-center">
+      <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+      </a>
+      <span class="mb-3 mb-md-0 text-muted">Copyright© 2011, INREM. All rights reserved.</span>
+    </div>
+
+    <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+      <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"></use></svg></a></li>
+      <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"></use></svg></a></li>
+      <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"></use></svg></a></li>
+    </ul>
+  </footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+
+</body>
+</html>

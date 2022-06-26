@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+
+.bg-container {
+    background-color: white;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-pg {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    max-width: 900px;
+    padding: 20px;
+}
+
+.heading {
+    color: #22d3ee;
+    font-family: "Roboto";
+    font-weight: 600;
+    font-size: 25px;
+    margin-bottom: 40px;
+}
+
+.signup-btns {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 15px;
+
+}
+
+.icon {
+    margin-right: 15px;
+    font-size: 15px;
+    color: #db3236;
+}
+
+.icon-f {
+    color: #4267b2;
+}
+
+.btn-g {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 180px;
+    border-radius: 12px;
+    font-family: "Roboto";
+    background-color: white;
+    font-size: 12px;
+    border-width: 2px;
+    margin-right: 20px;
+    border-style: solid;
+    border-color: black;
+}
+
+.email-sec {
+    background-color: #f9fbfe;
+    padding: 15px;
+    width: 80%;
+    max-width: 450px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.or {
+    color: gray;
+    font-family: "Roboto";
+}
+
+.email-input {
+    width: 90%;
+    border-radius: 6px;
+    height: 35px;
+    border-color: gray;
+    border-style: solid;
+    padding: 12px;
+    font-size: 12px;
+    margin-bottom: 15px;
+}
+
+.additional {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 90%;
+    align-self: center;
+    margin-bottom: 0%;
+}
+
+.checkbox-cont {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.checkbox {
+    width: 15px;
+    height: 15px;
+    margin-top: 10px;
+    margin-right: 5px;
+    background-color: blue;
+}
+
+.c-font {
+    font-family: "Roboto";
+    font-size: 13px;
+    margin-top: 8px;
+}
+
+.forget-p {
+    font-size: 14px;
+    margin-top: 10px;
+    font-weight: 500;
+}
+
+.login {
+    width: 90%;
+    max-width: 420px;
+    border-width: 0px;
+    border-radius: 6px;
+    background-color: #38bdf8;
+    padding: 10px;
+    color: white;
+    letter-spacing: 1px;
+    margin-top: 15px;
+}
+
+.d-account {
+    font-size: 13px;
+    align-self: flex-start;
+    margin-left: 20px;
+    margin-top: 0px;
+}

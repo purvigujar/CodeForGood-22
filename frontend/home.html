@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Government</title>
+    <link rel="icon" type="image/gif/png" href="./logos/favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="signup.css">
+</head>
+
+<body>
+    <div class="container">
+        <nav class="navbar navbar-expand-lg bg-light">
+            <div class="container">
+                <img style="width: 50px;" id="logo" src="images/logo.jpeg" class="d-inline-block align-text-center mx-5" alt="blank">
+            <span class="fs-5 text-muted">INREM</span>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto mb-2 mb-lg-0  ">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="home.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " aria-current="page" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Courses
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="overview.html">Overview</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="schedule.html">Curriculm</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Get started
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="home.html#saathi">Saathi</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="home.html#Mentor">Mentor</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="home.html#Trainee">Trainer</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="help.html">Help</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#loginModal" data-bs-toggle="modal" data-target="#loginModal">Login</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#SignupModal" data-bs-toggle="modal" data-target="#SignupModal">Sign up</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+            <!-- Login modal -->
+
+    <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Login</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+                <div class="bg-container">
+                    <div class="login-pg">
+                        <h1 class="heading">Login to INREM</h1>
+                        <div class="signup-btns">
+                            <button class="btn btn-g"><i class="fa-brands fa-google icon"></i>Login with Google</button>
+                            <button class="btn btn-g"><i class="fa-brands fa-facebook icon icon-f"></i>Login with facebook</button>
+                        </div>
+                        <form class="email-sec" id="email-sec" action="http://localhost:3000/auth/login" method="POST">
+                            <p class="or">----------------or----------------</p>
+                            <input type="text" name="email" placeholder="Email address" class="email-input" />
+                            <input type="password" name="password" placeholder="Password" class="email-input" />
+                            <div class="additional">
+                                <div class="checkbox-cont">
+                                    <input type="checkbox" id="checkBox" class="checkbox" />
+                                    <label for="checkBox" class="c-font">Remember me</label>
+                                </div>
+                                <a href="#" class="forget-p">Forgot password?</a>
+                            </div>
+                            <h6 class="d-account">Don't have an account?&emsp;<a href="file:///D:/JPMC/team-68/signup.html">Sign Up</a></h6>
+                            <button type="submit" class="btn login">Login</button>
+                        </form>
+                    </div>
+                </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SignUp modal -->
+
+    <div class="modal fade" id="SignupModal" tabindex="-1" role="dialog" aria-labelledby="SignupModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Register With Us</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+                <div class="bg-container">
+                    <div class="login-pg">
+                        <h1 class="heading">Sign up on INREM</h1>
+                        <div class="signup-btns">
+                            <button class="btn btn-g"><i class="fa-brands fa-google icon"></i>Sign up with Google</button>
+                            <button class="btn btn-g"><i class="fa-brands fa-facebook icon icon-f"></i>Sign up with facebook</button>
+                        </div>
+                        <div class="email-sec">
+                            <p class="or">---------------- OR ----------------</p>
+                            <div class="user-name">
+                                <input type="text" placeholder="First Name" class="name-input" />
+                                <input type="text" placeholder="Last Name" class="name-input" />
+                            </div>
+                            <input type="text" placeholder="Email address" class="email-input" />
+                            <input type="password" placeholder="Password" class="email-input" />
+                            <input type="text" placeholder="Phone Number" class="email-input" />
+                            <div class="additional">
+                                <div class="checkbox-cont">
+                                    <input type="checkbox" id="checkBox" class="checkbox" />
+                                    <label for="checkBox" class="c-font">Remember me</label>
+                                </div>
+                                <a href="#" class="forget-p">Forgot password?</a>
+                            </div>
+                            <h6 class="d-account">Have an account?&emsp;<a href="file:///D:/JPMC/team-68/login.html">Login</a></h6>
+                            <button class="btn login">Sign In</button>
+                        </div>
+                    </div>
+                </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Sign Up New -->
+
+    
+
+
+
+        <div>
+            <h2 class="h2 text-center my-5 fs-1 text-primary">INREM FOUNDATION</h2>
+
+        </div>
+        <div class="mt-5">
+            <div class="card " style="max-width: 1360px; border:0;">
+                <div class="row">
+                    <div class="col-md-8">
+                        <div class="card-body">
+
+                            <p class="card-text align-items-center justify-content-between">INREM Foundation is a research institution probing societal issues
+                                concerning water, public health, agriculture and the environment. The institution
+                                develops innovative inter-disciplinary solutions and brings them into the wider domain
+                                of practice by participating with communities and government.INREM has teams in 7 states
+                                of India and anchors the Water Quality Network offering courses such as on Water Quality
+                                Management. The organization is a national Sector Partner of the Jal Jeevan Mission
+                                (JJM) in India. INREM promotes the innovation initiative WaterHealthAI and developing
+                                thinking on Water Quality with Climate Change.The organization is supported by its
+                                partners such as the European Union, Arghyam, UNICEF, APPI and other agencies</p>
+
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="https://uploads.knightlab.com/storymapjs/adca2392f7ab793776f5588c21433993/inrem-in-india/_images/_A6A0038.jpg"
+                            class="img-fluid rounded-start" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <hr class="text-primary border-2 opacity-50 my-5 mx-5">
+
+        <div class=" mt-3">
+            
+            <h2 class="h2 text-center my-5 fs-1"> Our Projects</h2>
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                        class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="http://inremfoundation.org/images/image1.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="http://inremfoundation.org/images/image2.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="http://inremfoundation.org/images/image3.jpg" class="d-block w-100" alt="...">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+
+        <hr class="text-primary border-2 opacity-50 my-5 mx-5">
+
+
+        <div>
+            <h2 class="h2 text-center my-5 fs-1 text-primary">Getting Started</h2>
+
+            <div class="mt-3">
+                <div class="card" style="max-width: 1360px; border:0;">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJVpyAMuIKyvarggOZnQYaoY6axhgEaV2hDQ&usqp=CAU"
+                                class="img-fluid rounded-start" alt="">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body my-3" id="saathi">
+                                <h2>Saathi</h2>
+                                <p class="card-text">Be a part of the alumni network and help new WQCs in their journey
+                                    by being part of the Alumni network group(experience sharing across different
+                                    batches)</p>
+                                <!-- <button type="button" class="btn btn-outline-info"
+                                    style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;" data-bs-toggle="modal" data-target="#SignupModal">
+                                    Register Now 
+                                </button> -->
+                                <button type="button" class="btn btn-outline-info" data-bs-toggle="modal" data-bs-target="#SignupModal">
+                                    Register Now
+                                    </button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="mt-3">
+                <div class="card" style="max-width: 1360px; border:0;">
+                    <div class="row">
+                        <div class="col-md-8">
+                            <div class="card-body my-3" id="Mentor">
+                                <h2>Guided mentoring sessions</h2>
+                                <p class="card-text">These are based on ground challenges, a focused discussion around
+                                    real challenges that WQC may be facing.WQCs,experienced professionals,people who
+                                    want to learn can all join this course.This is a forum where a WQC can bring up a
+                                    case study of thier own video call(a real-life challenge they may be facing) and
+                                    look for discussions and solutions.Themes such as solutions around water
+                                    contamination,comm</p>
+                                <!-- <button type="button" class="btn btn-outline-info"
+                                    style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;" data-bs-toggle="modal" data-target="#SignupModal">
+                                    Register Now
+                                </button> -->
+                                <button type="button" class="btn btn-outline-info" data-bs-toggle="modal" data-bs-target="#SignupModal">
+                                    Register Now
+                                    </button>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlOAmyfB5-PvsZtdLpewcLQY8X6sH1O78QWg&usqp=CAU"
+                                class="img-fluid rounded-start" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-3">
+                <div class="card" style="max-width: 1360px; border:0;">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0Vvavd5fv5Ye_s6xK6CL7q_ZQIJe0ZgRndg&usqp=CAU"
+                                class="img-fluid rounded-start" alt="">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body my-3" id="Trainee">
+                                <h2>Trainers</h2>
+
+                                <p class="card-text">INREM Foundation is a research institution probing societal issues
+                                    concerning water, public health, agriculture and the environment. The institution
+                                    develops innovative inter-disciplinary solutions and brings them into the wider
+                                    domain
+                                    of practice by participating with communities and government.INREM has teams in 7
+                                    states
+                                    of India and anchors the Water Quality Network offering courses such as on Water
+                                    Quality
+                                    Management. The organization is a national Sector Partner of the Jal Jeevan Mission
+                                    (JJM) in India. INREM promotes the innovation initiative WaterHealthAI and
+                                    developing
+                                    thinking on Water Quality with Climate Change.The organization is supported by its
+                                    partners such as the European Union, Arghyam, UNICEF, APPI and other agencies</p>
+                                <!-- <button type="button" class="btn btn-outline-info" data-bs-toggle="modal" data-target="#SignupNEWModalLabel"
+                                    style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;" >
+                                    Register Now
+                                </button> -->
+                                <!-- Button trigger modal -->
+                                <button type="button" class="btn btn-outline-info" data-bs-toggle="modal" data-bs-target="#SignupModal">
+                                Register Now
+                                </button>
+  
+    
+      </div>
+    </div>
+  </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <div class="container mt-5">
+        <div class="card" style="max-width: 1360px;">
+            <div class="row">
+                <div class="col-md-8">
+                    <img src="http://inremfoundation.org/images/inrembotbanner.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+        <br>
+        <br>
+        <br>
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+        <div class="col-md-4 d-flex align-items-center">
+          <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+          </a>
+          <span class="mb-3 mb-md-0 text-muted">Copyright© 2011, INREM. All rights reserved.</span>
+        </div>
+    
+        <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+          <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"></use></svg></a></li>
+          <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"></use></svg></a></li>
+          <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"></use></svg></a></li>
+        </ul>
+      </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
+        integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+        integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+        crossorigin="anonymous"></script>
+        <script src="./login.js"></script>
+</body>
+
+</html>

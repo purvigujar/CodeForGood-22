@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Curriculum and Schedule</title>
+        <link rel="icon" type="image/gif/png" href="./logos/favicon.png">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <link rel="stylesheet" href="login.css">
+        <link rel="stylesheet" href="signup.css">
+        
+        <style>
+            table,th,tr{
+                border:5px solid white;
+               padding: 30px;
+                margin-left: 100px;
+                margin-right: 100px;
+                color: 5BC0BE;
+            }
+            td{
+                padding: 15px;
+            }
+            th{
+                color: black;
+                color: #0077B6;
+                font-size: large;
+                text-align: center;
+                background-color: white;
+            }
+            tr:nth-child(even)
+            {
+                background-color:#98ebe9;
+        
+                color: black;
+
+            }
+            tr:nth-child(odd){
+                background-color:#95e0f7;
+                
+            }
+        </style>
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg bg-light">
+            <div class="container">
+                <img style="width: 50px;" id="logo" src="images/logo.jpeg" class="d-inline-block align-text-center mx-5" alt="blank">
+            <span class="fs-5 text-muted">INREM</span>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto mb-2 mb-lg-0  ">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="home.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item dropdown active">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Courses
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="overview.html">Overview</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="schedule.html">Curriculm</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Get started
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="home.html#saathi">Saathi</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="home.html#Mentor">Mentor</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="home.html#Trainee">Trainer</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="help.html">Help</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#loginModal" data-bs-toggle="modal" data-target="#loginModal">Login</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#SignupModal" data-bs-toggle="modal" data-target="#SignupModal">Sign up</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+<!-- Login modal -->
+
+<div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Login</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            <div class="bg-container">
+                <div class="login-pg">
+                    <h1 class="heading">Login to INREM</h1>
+                    <div class="signup-btns">
+                        <button class="btn btn-g"><i class="fa-brands fa-google icon"></i>Login with Google</button>
+                        <button class="btn btn-g"><i class="fa-brands fa-facebook icon icon-f"></i>Login with facebook</button>
+                    </div>
+                    <div class="email-sec">
+                        <p class="or">----------------or----------------</p>
+                        <input type="text" placeholder="Email address" class="email-input" />
+                        <input type="password" placeholder="Password" class="email-input" />
+                        <div class="additional">
+                            <div class="checkbox-cont">
+                                <input type="checkbox" id="checkBox" class="checkbox" />
+                                <label for="checkBox" class="c-font">Remember me</label>
+                            </div>
+                            <a href="#" class="forget-p">Forgot password?</a>
+                        </div>
+                        <h6 class="d-account">Don't have an account?&emsp;<a href="file:///D:/JPMC/team-68/signup.html">Sign Up</a></h6>
+                        <button class="btn login">Login</button>
+                    </div>
+                </div>
+            </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- SignUp modal -->
+
+<div class="modal fade" id="SignupModal" tabindex="-1" role="dialog" aria-labelledby="SignupModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Register With Us</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            <div class="bg-container">
+                <div class="login-pg">
+                    <h1 class="heading">Sign up on INREM</h1>
+                    <div class="signup-btns">
+                        <button class="btn btn-g"><i class="fa-brands fa-google icon"></i>Sign up with Google</button>
+                        <button class="btn btn-g"><i class="fa-brands fa-facebook icon icon-f"></i>Sign up with facebook</button>
+                    </div>
+                    <div class="email-sec">
+                        <p class="or">---------------- OR ----------------</p>
+                        <div class="user-name">
+                            <input type="text" placeholder="First Name" class="name-input" />
+                            <input type="text" placeholder="Last Name" class="name-input" />
+                        </div>
+                        <input type="text" placeholder="Email address" class="email-input" />
+                        <input type="password" placeholder="Password" class="email-input" />
+                        <input type="text" placeholder="Phone Number" class="email-input" />
+                        <div class="additional">
+                            <div class="checkbox-cont">
+                                <input type="checkbox" id="checkBox" class="checkbox" />
+                                <label for="checkBox" class="c-font">Remember me</label>
+                            </div>
+                            <a href="#" class="forget-p">Forgot password?</a>
+                        </div>
+                        <h6 class="d-account">Have an account?&emsp;<a href="file:///D:/JPMC/team-68/login.html">Login</a></h6>
+                        <button class="btn login">Sign In</button>
+                    </div>
+                </div>
+            </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+        <h1 style="text-align: center; padding-top: 30px;">Curriculum and Schedule</h1><br><br>
+        <table>
+            <tr>
+                <th>Week</th>
+                <th >Session Series</th>
+                <th style="padding-right: 100px;">Description</th>
+                <th>Link</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Session 1</td>
+                <td>Introduction to course and broad expectations; Softwares to be
+                    used and clarifications
+                    Water quality in India: Some basics</td>
+                    <td><a href="#">CLICK HERE</a></td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Session 2</td>
+                <td>WQ Standards, and basic water testing</td>
+                    <td><a href="#">CLICK HERE</a></td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Session 3</td>
+                <td>Basics of WQ health impacts and identification</td>
+                    <td><a href="#">CLICK HERE</a></td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Session 4</td>
+                <td>Educating on Water treatment techniques and choosing
+                    appropriate solutions</td>
+                    <td><a href="#">CLICK HERE</a></td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Session 5</td>
+                <td>Water safety planning, Household level Behaviour change and
+                    communication at community level</td>
+                    <td><a href="#">CLICK HERE</a></td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>Session 6</td>
+                <td>Safe water learning cards for Frontline workers</td>
+                    <td><a href="#">CLICK HERE</a></td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>Session 7</td>
+                <td>WQ in JJM - VAPs, Neer and WQ&MS</td>
+                    <td><a href="#">CLICK HERE</a></td>
+            </tr>
+            <tr>
+                <td>8</td>
+                <td>Session 8</td>
+                <td>Planning a WQ management programme for villages -
+                    Assessment, BCC, Implementation, O&M, Sustainability</td>
+                    <td><a href="#">CLICK HERE</a></td>
+            </tr>
+            <tr>
+                <td>9</td>
+                <td>Session 9</td>
+                <td>Stakeholder management on WQ in JJM - DWSM, ISA, VWSC -
+                    Roles and Responsibilities, timelines and convergence
+                    </td>
+                    <td><a href="#">CLICK HERE</a></td>
+            </tr>
+        </table>
+        <br>
+        <br>
+        <br>
+
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+            <div class="col-md-4 d-flex align-items-center">
+              <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+              </a>
+              <span class="mb-3 mb-md-0 text-muted">Copyright© 2011, INREM. All rights reserved.</span>
+            </div>
+        
+            <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+              <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"></use></svg></a></li>
+              <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"></use></svg></a></li>
+              <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"></use></svg></a></li>
+            </ul>
+          </footer>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
+        integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+        integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+        crossorigin="anonymous"></script>
+        
+    </body>
+</html>
